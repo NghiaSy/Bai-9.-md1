@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // // Bài 1
+    // let a = +prompt("Nhập số a ");
+    // let b = +prompt("Nhập số b ");
+    // if ( a % b == 0) {
+    //     alert("a chia hết cho b")
+    // }
+    // else alert("a không chia hết cho b");
+    // Bài 2
+    // let c = +prompt("Nhập số tuổi của bạn");
+    // if (c >= 16) {
+    //     alert("Số tuổi của bạn là " + c + " .Đủ điều kiện vào lớp 10 ");
+    // }
+    // else alert("Số tuổi của bạn là " + c + " .Không đủ điều kiện vào lớp 10 ");
+    // // Bài 3
+    // let d = +prompt("Nhập số nguyên : ");
+    // if (d>0) {
+    //     alert("Số nguyên lớn hơn 0 ")
+    // }
+    // else if (d<0) alert("Số nguyên nhỏ hơn 0");
+    // else alert("Số nguyên = 0");
+    // // Bài 4: Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó
+    // let a = +prompt("Nhập số a :");
+    // let b = +prompt("Nhập số b :");
+    // let c = +prompt("Nhập số c :");
+    // let max;
+    // max = a;
+    // if (b>max) {
+    //     max = b;
+    // }
+    // if (c>max) {
+    //     max = c;
+    // }
+    // alert(max);
+    // // Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ
+    // let a = +prompt("Nhập điểm kiểm tra 1 tiết");
+    // let b = +prompt("Nhập điểm kiểm tra giữa kỳ");
+    // let c = +prompt("Nhập điểm kiểm tra cuối kỳ");
+    // let TB = (a + b*2 + c*3) / 6;
+    // if (TB < 5) {
+    //     alert("Học lực yếu kém");
+    // }
+    // else if (TB < 6.5) {
+    //     alert("Học lực Trung Bình");
+    // }else if (TB < 8) {
+    //     alert("Học lực Khá");
+    // }else {
+    //     alert("Học lực Giỏi");
+    // }
+    // // Bài 6: Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng
+    // let a = +prompt("Doanh thu của cửa hàng là :");
+    // let b ;
+    // if (a > 0 && a <10000 ) {
+    //     b = a *2 / 100;
+    //     alert("Hoa hồng nhận được là :" + b );
+    // }
+    // else if (a < 100000) {
+    //     b = a*5/100;
+    //     alert("Hoa hồng nhận được là :" + b);
+    // }
+    // else {
+    //     b = a*10/100;
+    //     alert("Hoa hồng nhận được là : " + b);
+    // }
+    // Bài 7: Tính cước điện thoại cho một hộ gia đình với các thông số đã cho
+    let SoPhutGoi = +prompt("Nhập số phút gọi trong 1 tháng");
+    let a = 25000; // số tiền bắt buộc phải trả
+    let Sum;
+    if (SoPhutGoi > 200) {
+        Sum = 50*600 + 150*400 + (SoPhutGoi-200) * 200 +a;
+    }
+    else if (SoPhutGoi > 50) {
+        Sum = 50*600 + (SoPhutGoi-50)*400 + a;
+    }
+    else {
+        Sum = (SoPhutGoi)*600 + a;
+    }
+    alert(Sum);
+
+</script>
+</body>
+</html>
